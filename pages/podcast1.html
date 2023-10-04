@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="moon"></div>
+        <h1>Click On Me<br>To Make Me Sing      🎼</h1>
+  <audio src ="https://drive.google.com/u/0/uc?id=1rCTDavtIPB-wiXN71GBBPQ0PVAr2Ajdn&export=download" id="song" loop>
+  </audio>
+  <Button id="play">play</Button>
+  <Button id="pause" style="display: none;">pause</Button>
+  <script> 
+
+var play = document.getElementById("play");
+var pause = document.getElementById("pause");
+var song = document.getElementById("song");
+
+song.load();
+
+
+
+
+play.addEventListener("click", function() {
+  song.play();
+   play.id="pause";
+  pause.id="play";
+
+  }); 
+
+pause.addEventListener("click", function() {
+  song.pause(); 
+  play.id="play";
+  pause.id="pause";
+  
+  }); 
+
+  </script>
+</body> 
+</html>
+    
+</body>
+</html>
